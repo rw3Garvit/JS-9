@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="name">
+    <h1 id="err"></h1>
+    <button onclick="test()">test</button>
+
+    <SCript>
+
+
+
+        // const data = {
+        //     name: "garvit"
+        // }
+
+        // console.log(data.name);
+
+
+
+
+        // test()
+        // function test() {
+
+
+        //     let name = document.getElementById('name').value
+
+        //     if (name === "garvit" ) {
+        //         document.getElementById('err').innerHTML = "Login Success"
+        //         document.getElementById('err').style.color = "Green"
+        //     }
+        //     else if (!name) {
+        //         document.getElementById('err').innerHTML = "Invalid"
+        //         document.getElementById('err').style.color = "Red"
+        //     }
+        // }
+
+        // const test = () => {
+
+        //     console.log("test called");
+        // }
+
+
+        // console.log(a);
+        // var a = 20
+
+        // console.log("hello");
+
+
+
+
+        // async function getData() {
+
+        //     const res = await fetch('https://jsonplaceholder.typicode.com/todos')
+        //     console.log(res);
+        //     const result = await res.json()
+        //     console.log(result);
+
+        // }
+
+
+        // getData()
+
+
+        function test() {
+
+            console.log("test called");
+        }
+
+
+        async function myDisplay() {
+            let myPromise = new Promise(function (resolve) {
+                setTimeout(function () { resolve("I love You !!"); }, 3000);
+            });
+            document.getElementById("err").innerHTML = await myPromise;
+
+            test()
+
+        }
+
+        myDisplay();
+
+
+        const date = new Date();
+
+        console.log(date);
+
+
+    </SCript>
+
+
+</body>
+
+</html>
