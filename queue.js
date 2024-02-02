@@ -15,6 +15,7 @@ class Q {
 
         if (this.que.length < this.size) {
             this.que.push(element)
+
         }
         else {
             console.log("que full");
