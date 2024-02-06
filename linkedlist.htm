@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+
+        class Node {
+
+
+            constructor(data) {
+                this.head = {
+                    data: data,
+                    next: null
+                }
+                this.tail = this.head
+                this.size = 1
+            }
+
+            add(data) {
+
+                const node = {
+                    data: data,
+                    next: null
+                }
+                this.tail.next = node
+                this.tail = node
+                this.size += 1
+
+            }
+
+
+            travel() {
+
+                let count = 0
+                let current = this.head
+
+                while (count < this.size) {
+                    console.log(current)
+                    current = current.next
+                    console.log(current)
+
+                    count++
+
+
+
+                }
+
+
+            }
+
+
+            delete(node) {
+
+            }
+
+
+
+        }
+
+
+        const node = new Node(5)
+        node.add(10)
+        node.add(20)
+        node.add(60)
+        node.add(70)
+        node.travel()
+
+        console.log(node);
+
+
+
+    </script>
+</body>
+
+</html>
